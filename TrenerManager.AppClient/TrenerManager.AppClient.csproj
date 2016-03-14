@@ -7,8 +7,8 @@
     <ProjectGuid>{AC4D0A96-FB32-4FD4-ACD7-38731C1B5C90}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TrenerManager.Application</RootNamespace>
-    <AssemblyName>TrenerManager.Application</AssemblyName>
+    <RootNamespace>TrenerManager.AppClient</RootNamespace>
+    <AssemblyName>TrenerManager.AppClient</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -86,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrenerManager.Common\TrenerManager.Common.csproj">
+      <Project>{3a37d25c-9e12-4b7c-b7fa-5b8f37e297d2}</Project>
+      <Name>TrenerManager.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
