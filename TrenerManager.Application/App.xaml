@@ -1,0 +1,8 @@
+﻿<Application x:Class="TrenerManager.AppClient.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TrenerManager.AppClient">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
