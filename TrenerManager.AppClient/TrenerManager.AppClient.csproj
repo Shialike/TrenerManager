@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -91,6 +92,14 @@
     <ProjectReference Include="..\TrenerManager.Common\TrenerManager.Common.csproj">
       <Project>{3a37d25c-9e12-4b7c-b7fa-5b8f37e297d2}</Project>
       <Name>TrenerManager.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrenerManager.Resources\TrenerManager.Resources.csproj">
+      <Project>{811d7a33-3ddc-4421-8be5-e51adb7c6985}</Project>
+      <Name>TrenerManager.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrenerManager.Windows\TrenerManager.Windows.csproj">
+      <Project>{8292ddbf-585d-41da-a537-3d1d6ba9d181}</Project>
+      <Name>TrenerManager.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

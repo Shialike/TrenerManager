@@ -8,7 +8,7 @@ namespace TrenerManager.Common.Enums
 {
     public enum LoginState
     {
-        NotLoggedIn,
-        LoggedIn,
+        Logout,
+        LoggedIn
     }
 }
