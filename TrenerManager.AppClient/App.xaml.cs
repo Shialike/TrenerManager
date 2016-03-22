@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.SfSkinManager;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -8,7 +9,6 @@ using System.Windows;
 using TrenerManager.Common;
 using TrenerManager.Common.Enums;
 using TrenerManager.Windows;
-using System.Windows.Controls.Ribbon;
 
 namespace TrenerManager.AppClient
 {
@@ -19,6 +19,7 @@ namespace TrenerManager.AppClient
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+            SfSkinManager.ApplyStylesOnApplication = true;
             //base.OnStartup(e);
             StateManager.LoginState = LoginState.LoggedIn;
             while (StateManager.LoginState == LoginState.LoggedIn)
