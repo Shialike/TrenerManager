@@ -9,7 +9,7 @@
         xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
         mc:Ignorable="d" 
         syncfusionskin:SfSkinManager.VisualStyle="Lime"
-        Title="Trener Manager"  WindowStartupLocation="CenterScreen" >
+        Title="Trener Manager"  WindowStartupLocation="CenterScreen" Width="1600" Height="900" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -18,13 +18,20 @@
         <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" Grid.Row="0"  >
             <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
                 <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
-                    <syncfusion:RibbonButton SizeForm="Large" Label="Nowy trening" LargeIcon="/TrenerManager.Resources;component/Icons/Pitch64.png" />
+                    <syncfusion:RibbonButton SizeForm="Large" Label="Nowy trening" LargeIcon="/TrenerManager.Resources;component/Icons/Pitch64.png" Click="OpenTrainingUnits" />
                 </syncfusion:RibbonBar>
             </syncfusion:RibbonTab>
         </syncfusion:Ribbon>
-        <syncfusion:DockingManager x:Name="SyncDockingManager" Grid.Row="1" UseDocumentContainer="True" DockFill="True"  >
-            <ContentControl x:Name="LeftPanel" Content="{Binding LeftPanel}" syncfusion:DockingManager.CanClose="False"/>
-            <ContentControl x:Name="MiddlePanel" Content="{Binding MiddlePanel}" syncfusion:DockingManager.CanClose="False"/>
+        <syncfusion:DockingManager x:Name="SyncDockingManager" Grid.Row="1" UseDocumentContainer="True" DockFill="True" >
+            <ContentControl x:Name="LeftPanel" Content="{Binding LeftPanelViewModel}" 
+                            syncfusion:DockingManager.Header="{Binding LeftPanelHeader}"
+                            syncfusion:DockingManager.CanClose="False" 
+                            syncfusion:DockingManager.CanFloat="False"
+                            syncfusion:DockingManager.DesiredWidthInDockedMode="25"/>
+            <ContentControl x:Name="MiddlePanel" Content="{Binding MiddlePanelViewModel}" 
+                            syncfusion:DockingManager.Header="{Binding MiddlePanelHeader}"
+                            syncfusion:DockingManager.CanClose="False" 
+                            syncfusion:DockingManager.CanFloat="False"/>
         </syncfusion:DockingManager>
     </Grid>
 </syncfusion:RibbonWindow>

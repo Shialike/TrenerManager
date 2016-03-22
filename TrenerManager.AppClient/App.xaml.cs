@@ -24,7 +24,7 @@ namespace TrenerManager.AppClient
             StateManager.LoginState = LoginState.LoggedIn;
             while (StateManager.LoginState == LoginState.LoggedIn)
             {
-                var mainWindow = new MainWindow();
+                var mainWindow = new MainWindow() ;
                 mainWindow.Show();
 
                 StateManager.LoginState = LoginState.Logout;

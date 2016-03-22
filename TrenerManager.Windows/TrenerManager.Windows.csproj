@@ -69,13 +69,29 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\PropertyChangeUserControl.cs" />
+    <Compile Include="TrainingUnits\TrainingUnits.xaml.cs">
+      <DependentUpon>TrainingUnits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingUnits\TrainingUnitsToolbox.xaml.cs">
+      <DependentUpon>TrainingUnitsToolbox.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="Interfaces\IViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="TrainingUnits\TrainingUnits.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainingUnits\TrainingUnitsToolbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
